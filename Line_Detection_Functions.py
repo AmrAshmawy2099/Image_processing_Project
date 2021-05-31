@@ -87,9 +87,10 @@ def checkBallPosition(ball_center,ball_radius,line_edges):
 def CheckForGoal(Video_Path):
     ########## Initialize INPUT AND OUTPUT VIDEOS#############
     cap = cv2.VideoCapture(Video_Path)
-    Output_Name=Video_Path.split(".")[0]+"_output.avi"
+    Output_Video_Path=Video_Path.split(".")[0]+"_output.avi"
+    Output_Image_Path=Video_Path.split(".")[0]+"_output.png"
     fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
-    out = cv2.VideoWriter(Output_Name, fourcc, 20, (1920, 1080), True)
+    out = cv2.VideoWriter(Output_Video_Path, fourcc, 20, (1920, 1080), True)
     FoundLineFlag=0
     ret = 1
     line_edges=0
@@ -125,17 +126,17 @@ def CheckForGoal(Video_Path):
                     cropped_frame = frame[int(ball_center[1] - ball_radius - 200):int(ball_center[1] + ball_radius + 200),
                                     int(ball_center[0] - ball_radius - 200):int(ball_center[0] + ball_radius + 200)]
                     cropped_frame=cv2.resize(cropped_frame,(1920,1080))
-                    cv2.imwrite(Video_Path.split(".")[0]+"_output.png", cropped_frame)
+                    cv2.imwrite(Output_Image_Path, cropped_frame)
                     ############## REPEAT THE FRAME THAT THE BALL PASSED THE LINE ###########
                     for i in range(50):
                         out.write(cropped_frame)
-                    return "GOAL"
+                    return "GOAL",Output_Video_Path,Output_Image_Path
 
             out.write(frame)
     if 'Closest_Frame' in locals():
-        cv2.imwrite(Video_Path.split(".")[0] + "_output.png", Closest_Frame)
-        return "NOT GOAL"
-    return "NO BALL DETECTED"
+        cv2.imwrite(Output_Image_Path, Closest_Frame)
+        return "NOT GOAL",Output_Video_Path,Output_Image_Path
+    return "NO BALL DETECTED",-1,-1
 
 
 
