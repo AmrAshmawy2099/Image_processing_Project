@@ -127,8 +127,12 @@ def CheckForGoal(Video_Path):
                                     int(ball_center[0] - ball_radius - 200):int(ball_center[0] + ball_radius + 200)]
                     cropped_frame=cv2.resize(cropped_frame,(1920,1080))
                     cv2.imwrite(Output_Image_Path, cropped_frame)
-                    ############## REPEAT THE FRAME THAT THE BALL PASSED THE LINE ###########
+                    for i in range(20):
+                        ############## REPEAT THE FRAME THAT THE BALL PASSED THE LINE ###########
+                        out.write(frame)
+
                     for i in range(50):
+                        ############## REPEAT THE FRAME THAT THE BALL PASSED THE LINE Zoomed###########
                         out.write(cropped_frame)
                     return "GOAL",Output_Video_Path,Output_Image_Path
 
@@ -137,9 +141,6 @@ def CheckForGoal(Video_Path):
         cv2.imwrite(Output_Image_Path, Closest_Frame)
         return "NOT GOAL",Output_Video_Path,Output_Image_Path
     return "NO BALL DETECTED",-1,-1
-
-
-
 
     out.release()
 
