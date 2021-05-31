@@ -150,11 +150,11 @@ def CheckForGoal(Video_Path):
 ################################################################################
 
 
+#
+# print(CheckForGoal('Input_Videos/Goal_1.mp4'))
 
-CheckForGoal('Input_Videos/NoGoal_1.mp4')
-
-
-cv2.waitKey()
+#
+# cv2.waitKey()
 
 
 
