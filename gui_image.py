@@ -61,7 +61,7 @@ class Main(QMainWindow):
         exitAction = QAction(QIcon('exit.png'), '&Exit', self)
         exitAction.setShortcut('Ctrl+Q')
         exitAction.setStatusTip('Exit application')
-        exitAction.triggered.connect(self.exitCall)
+        exitAction.triggered.connect(self.close)
 
         # Create menu bar and add action
         menuBar = self.menuBar()
@@ -97,7 +97,7 @@ class Main(QMainWindow):
         self.mediaPlayer.error.connect(self.handleError)
 
     def openFile(self):
-        self.fileName, _ = QFileDialog.getOpenFileName(self, "Open Movie", QDir.homePath())
+        self.fileName, _ = QFileDialog.getOpenFileName(self, "Open Movie")
 
         if self.fileName != '':
             self.mediaPlayer.setMedia(
