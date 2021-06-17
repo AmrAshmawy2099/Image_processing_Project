@@ -158,4 +158,3 @@ def CheckForGoal(Video_Path):
 
 
 
-CheckForGoal("Input_Videos/Goal_2.mp4")
