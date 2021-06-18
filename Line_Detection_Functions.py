@@ -126,7 +126,10 @@ def CheckForGoal(Video_Path):
                     cropped_frame = frame[int(ball_center[1] - ball_radius - 200):int(ball_center[1] + ball_radius + 200),
                                     int(ball_center[0] - ball_radius - 200):int(ball_center[0] + ball_radius + 200)]
                     cropped_frame=cv2.resize(cropped_frame,(1920,1080))
-                    cv2.imwrite(Output_Image_Path, cropped_frame)
+                    tempframe = cropped_frame.copy()
+                    tempframe = cv2.putText(tempframe, 'GOAL', (100, 300), cv2.FONT_HERSHEY_SIMPLEX,
+                                                3, (0, 153, 255), 7, cv2.LINE_AA)
+                    cv2.imwrite(Output_Image_Path, tempframe)
                     tempframe = frame.copy()
                     for i in range(20):
                         ############## REPEAT THE FRAME THAT THE BALL PASSED THE LINE ###########
@@ -154,6 +157,7 @@ def CheckForGoal(Video_Path):
 
     out.release()
 
+CheckForGoal('Input_Videos/Goal_2.mp4')
 
 
 
