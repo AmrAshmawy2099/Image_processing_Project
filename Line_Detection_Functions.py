@@ -157,8 +157,6 @@ def CheckForGoal(Video_Path):
 
     out.release()
 
-CheckForGoal('Input_Videos/Goal_2.mp4')
-
 
 
 
