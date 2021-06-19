@@ -7,10 +7,10 @@
 | Yousef Sameh Ghattas Yousef | 1601727 |
 |Eman Salah Eldin Shaban | 1000024 |
 
+# Demo
+ https://www.youtube.com/watch?v=AzvxaqFo9qE
 
-[demo] : https://www.youtube.com/watch?v=AzvxaqFo9qE
-
-#Output Samples :
+# Output Samples :
 ![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/1.png "")
 
 ![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/2.png)
