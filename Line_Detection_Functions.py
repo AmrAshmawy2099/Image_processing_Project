@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def DetectLine(frame):
-    # this function is used to detect the edges of the goal line ( upper edge )
+    # This function is used to detect the edges of the goal line (upper edge)
     blurred = cv2.GaussianBlur(frame, (17, 17), 2)
     hlsFrame = cv2.cvtColor(blurred, cv2.COLOR_BGR2HLS)
 
@@ -76,7 +76,7 @@ def DetectBall(frame):
     return -1,-1;
 
 def checkBallPosition(ball_center,ball_radius,line_edges):
-    #first we should do the line equation
+    # First we should do the line equation
     x,y=ball_center
     x1,y1,x2,y2=line_edges
     slope=(y1-y2)/(x1-x2)
