@@ -1,3 +1,6 @@
+# Project Description : 
+Implementation for goalline technology using image processing technique
+
 # Team Members:
 | name| code|
 | ------------- | ------------- |
