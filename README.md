@@ -1,3 +1,4 @@
+#H1 Work Distribution :
 | name| code|
 | ------------- | ------------- |
 |Amr Khaled Mohamed Ashmawy | 1600931 |
@@ -9,7 +10,8 @@
 
 
 
-[demo](https://www.youtube.com/watch?v=AzvxaqFo9qE )
-![output example](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/1.png)
+`<demo>` <https://www.youtube.com/watch?v=AzvxaqFo9qE>
+#H1 Output Samples :
+![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/1.png "")
 
-![output example](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/2.png)
+![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/2.png)
