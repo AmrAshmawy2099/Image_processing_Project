@@ -1,6 +1,13 @@
 # Project Description : 
 Implementation for goalline technology using image processing technique
 
+# Input:
+video showing goal line and ball motion
+# Output :
+* video showing detected line boundary and ball tracking
+* image containing the moment that the ball just passed the line into
+Or the closest frame in case the ball didn't completely pass over the line
+
 # Team Members:
 | name| code|
 | ------------- | ------------- |
