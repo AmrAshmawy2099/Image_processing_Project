@@ -9,7 +9,7 @@
 
 
 
-[Links](https://www.youtube.com/watch?v=AzvxaqFo9qE "project demo")
-![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/1.png)
+[demo](https://www.youtube.com/watch?v=AzvxaqFo9qE )
+![output example](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/1.png)
 
-![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/2.png)
+![output example](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/2.png)
