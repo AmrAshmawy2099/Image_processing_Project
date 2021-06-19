@@ -1,4 +1,4 @@
-#H1 Work Distribution :
+#H1 Header Work Distribution :
 | name| code|
 | ------------- | ------------- |
 |Amr Khaled Mohamed Ashmawy | 1600931 |
@@ -11,7 +11,7 @@
 
 
 `<demo>` <https://www.youtube.com/watch?v=AzvxaqFo9qE>
-#H1 Output Samples :
+#H1 Header Output Samples :
 ![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/1.png "")
 
 ![](https://github.com/AmrAshmawy2099/Image_processing_Project/blob/main/images/2.png)
